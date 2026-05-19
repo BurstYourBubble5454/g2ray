@@ -1,3 +1,5 @@
+turn this into vless websocket:
+
 {
   "inbounds": [
     {
@@ -12,8 +14,9 @@
         "decryption": "none"
       },
       "streamSettings": {
-        "network": "ws",
-        "wsSettings": {
+        "network": "xhttp",
+        "xhttpSettings": {
+          "mode": "packet-up",
           "path": "/"
         }
       }
